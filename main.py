@@ -1,7 +1,7 @@
 if __name__ == '__main__':
 
     # Task 1
-    arr = [1,2,3,4,5]
+    arr = [1, 2, 3, 4, 5]
     print(arr[0], arr[2], arr[-2])
 
     print()
@@ -18,7 +18,6 @@ if __name__ == '__main__':
     print()
 
     # Task 3
-
     print('Введите слово')
     str = input()
     print('Введите букву')
@@ -37,3 +36,11 @@ if __name__ == '__main__':
         arr = arr // 10
         var += 1
     print(var)
+
+    print()
+
+    # Task 5
+    print('Введите слово')
+    word = input()
+    print('Слово наоборот')
+    print(word[::-1])
