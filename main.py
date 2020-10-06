@@ -44,3 +44,16 @@ if __name__ == '__main__':
     word = input()
     print('Слово наоборот')
     print(word[::-1])
+
+    print()
+
+    # Task 6
+    print('Введите массив из 4 чисел')
+    mas = []
+    for var in range(4):
+        what = input()
+        mas.append(what)
+    if mas[0] == mas[1] == mas[2] == mas[3]:
+        print('Массив состоит исключительно из одного и того же значения')
+    else:
+        print('Массив состоит из различных значений')
