@@ -24,4 +24,16 @@ if __name__ == '__main__':
     print('Введите букву')
     sym = input()
     num = str.rfind(sym)
+    print('Индекс:')
     print(num)
+
+    print()
+
+    # Task 4
+    print('Введите число')
+    arr = int(input())
+    var = 0
+    while arr % 10 == 0:
+        arr = arr // 10
+        var += 1
+    print(var)
