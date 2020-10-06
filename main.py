@@ -14,3 +14,14 @@ if __name__ == '__main__':
         print(arr[N - 1] ** N)
     else:
         print(-1)
+
+    print()
+
+    # Task 3
+
+    print('Введите слово')
+    str = input()
+    print('Введите букву')
+    sym = input()
+    num = str.rfind(sym)
+    print(num)
