@@ -90,3 +90,13 @@ if __name__ == '__main__':
         print('correct')
     else:
         print('not correct')
+
+    # Task 8
+    arr8 = ([[1, 2, 3], [4, 5, 6], 6])
+    resArr = []
+    for elem in arr8:
+        if type(elem) == list:
+            resArr.extend(elem)
+        else:
+            resArr.append(elem)
+    print("Одномерный массив:", resArr)
