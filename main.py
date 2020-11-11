@@ -1,3 +1,6 @@
+from re import A
+from typing import List, Any, Union
+
 if __name__ == '__main__':
 
     # Task 1
@@ -58,4 +61,32 @@ if __name__ == '__main__':
     else:
         print('Массив состоит из различных значений')
 
+    # Task 7
+    up = ['Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C',
+          'V',
+          'B', 'N', 'M']
+    down = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x',
+            'c',
+            'v', 'b', 'n', 'm']
+    number = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+    all = up + down + number
+    print('Введите пароль')
+    password = input()
+    f = True
+    f1 = f2 = f3 = False
+    for p in password:
+        if p not in all:
+            f = False
 
+    for p in password:
+        if p in up:
+            f1 = True
+        if p in down:
+            f2 = True
+        if p in number:
+            f3 = True
+
+    if len(password) >= 16 and f * f1 * f2 * f3 == True:
+        print('correct')
+    else:
+        print('not correct')
