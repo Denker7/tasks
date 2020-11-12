@@ -104,3 +104,15 @@ if __name__ == '__main__':
     # Task 9
     d = {'q': 1.1, 'w': 0.2, 'e': 3.7, 'r': 3.7}
     print(max(d, key=d.get))
+
+    # Task 10
+    mas = []
+    for i in range(6):
+        dano = input()
+        mas.append(dano)
+    if len(mas) != len(set(mas)):
+        for i in mas:
+            if mas.count(i) >= 2:
+                print(i, end='')
+    else:
+        print('уникальный массив')1
