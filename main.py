@@ -100,3 +100,7 @@ if __name__ == '__main__':
         else:
             resArr.append(elem)
     print("Одномерный массив:", resArr)
+
+    # Task 9
+    d = {'q': 1.1, 'w': 0.2, 'e': 3.7, 'r': 3.7}
+    print(max(d, key=d.get))
