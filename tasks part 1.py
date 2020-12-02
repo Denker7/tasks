@@ -115,4 +115,4 @@ if __name__ == '__main__':
             if mas.count(i) >= 2:
                 print(i, end='')
     else:
-        print('уникальный массив')1
+        print('уникальный массив')
