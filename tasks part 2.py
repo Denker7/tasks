@@ -38,3 +38,11 @@ for i in range(1,len(text)):
     else:
         count = 1
 print(max)
+
+# Task 4
+text = input()
+string = ''
+for i in range(0,len(text)):
+    if text[i].isupper():
+        string += text[i]
+print(string)
