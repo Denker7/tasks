@@ -56,3 +56,17 @@ for i,j in enumerate(mass):
         for count in range(mass.count(j)):
             output.extend([j])
 print (output)
+
+# Task 6
+list1 = input()
+number = int(input())
+nearest = 0
+min = number
+for i in list1:
+    if min > abs(number-int(i)):
+        min = abs(number-int(i))
+        nearest = i
+    if min == abs(number-int(i)):
+        if nearest > i:
+            nearest = i
+print('ближайшее к', number, 'является', nearest)
