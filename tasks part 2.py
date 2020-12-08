@@ -70,3 +70,17 @@ for i in list1:
         if nearest > i:
             nearest = i
 print('ближайшее к', number, 'является', nearest)
+
+# Task 7
+def task7(x,y,N):
+    if y==8:
+        return N
+    if x==1:
+        return task7(2, y+1, N)
+    if x==8:
+        return task7(7, y+1, N)
+    return (task7(x+1, y+1, N) + task7(x-1, y+1, N))
+print("Введите x и y")
+x=int(input())
+y=int(input())
+print(task7(x,y,1))
