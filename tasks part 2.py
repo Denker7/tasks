@@ -46,3 +46,13 @@ for i in range(0,len(text)):
     if text[i].isupper():
         string += text[i]
 print(string)
+
+# Task 5
+mass = input()
+output = []
+count = 0
+for i,j in enumerate(mass):
+    if i == mass.index(j):
+        for count in range(mass.count(j)):
+            output.extend([j])
+print (output)
