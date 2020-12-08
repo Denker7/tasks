@@ -25,3 +25,16 @@ for i in text.split():
         break;
 if count < 3:
     print ('отсутствует последовательность из 3 слов')
+
+# Task 3
+text = input()
+count = 1
+max = 1
+for i in range(1,len(text)):
+    if text[i] == text[i-1]:
+        count += 1
+        if count > max:
+            max = count
+    else:
+        count = 1
+print(max)
